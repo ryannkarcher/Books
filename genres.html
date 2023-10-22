@@ -7,9 +7,10 @@
    <title>Books to Book</title>
    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="books.css">
+      <!-- need to link to CSS and bootstrap to function. -->
 </head>
 <body class="bg-green">
-   
+   <!--header is the same as is the index page -->
    <header class="bg-brown">
       <h1 class="container display-1">Genres</h1>
       <div class="container">
@@ -33,39 +34,28 @@
       </div>
    </header>
 
-   <div class="container-fluid bg-brown text-center">
-      <div class="row">
-         <div class="col">
-            <a href="#horror">Horror</a>
-         </div>
-         <div class="col">
-            <a href="#romance">Romance</a>
-         </div>
-         <div class="col">
-            <a href="#nonfiction">Nonfiction</a>
-         </div>
-         <div class="col">
-            <a href="#history">History</a>
-         </div>
-      </div>
-   </div>
-
    <div class="container">
       <div class="row">
          <div class="col">
-            <h2 class="text-center display-5 my-3" name="horror">Horror</h2>
+            <h2 class="text-center display-5 my-3">Horror</h2>
+            <!-- each heading got a display 5 to stand out to users-->
          </div>
       </div>
       <div class="row">
          <div class="col-md-5 m-2" style="border: solid black; border-radius: 10px">
             <div class="col-md">
                <img class="image2" style="height: 300px;" src="images/theShining.jpg"/>
+                  <!-- includes image2 personal CSS since sizing
+                  and placement were off in teh column -->
             </div>
             <h3>The Shining by Stephen King</h3>
             <p class="fs-5">
                Jack Torrance’s new job at the Overlook Hotel is the perfect chance for a fresh start. As the off-season caretaker at the atmospheric old hotel, he’ll have plenty of time to spend reconnecting with his family and working on his writing. But as the harsh winter weather sets in, the idyllic location feels ever more remote . . . and more sinister. And the only one to notice the strange and terrible forces gathering around the Overlook is Danny Torrance, a uniquely gifted five-year-old.
             </p>
          </div>
+            <!-- there is one container per section, with at least two rows:
+            one for the header and one for the columns, which include the
+            cover and title, author, and description. -->
          <div class="col-md-5 m-2" style="border: solid black; border-radius: 10px">
             <div class="col-md">
                <img class="image2" style="height: 300px;" src="images/headFullofGhosts.jpg"/>
@@ -100,7 +90,7 @@
    <div class="container">
       <div class="row">
          <div class="col">
-            <h2 class="text-center display-5 my-3" name="romance">Romance</h2>
+            <h2 class="text-center display-5 my-3">Romance</h2>
          </div>
       </div>
       <div class="row">
@@ -128,7 +118,7 @@
    <div class="container">
       <div class="row">
          <div class="col">
-            <h2 class="text-center display-5 my-3" name="nonfiction">Nonfiction</h2>
+            <h2 class="text-center display-5 my-3">Nonfiction</h2>
          </div>
       </div>
       <div class="row">
@@ -156,7 +146,7 @@
    <div class="container">
       <div class="row">
          <div class="col">
-            <h2 class="text-center display-5 my-3" name="history">History</h2>
+            <h2 class="text-center display-5 my-3">History</h2>
          </div>
       </div>
       <div class="row">
@@ -164,7 +154,7 @@
             <div class="col-md">
                <img class="image2" style="height: 300px;" src="images/romeHistory.jpg"/>
             </div>
-            <h3>SPQR: A History of Ancient Rome by Mary Beard/h3>
+            <h3>SPQR: A History of Ancient Rome by Mary Beard</h3>
             <p class="fs-5">
                In SPQR, an instant classic, Mary Beard narrates the history of Rome "with passion and without technical jargon" and demonstrates how "a slightly shabby Iron Age village" rose to become the "undisputed hegemon of the Mediterranean" (Wall Street Journal).
             </p>

@@ -7,9 +7,11 @@
    <title>Books to Book</title>
    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="books.css">
+      <!-- ditto; need connection to CSS and bootstrap to function -->
 </head>
 <body class="bg-green">
- 
+   <!-- had to use personal CSS to get the colors I wanted; but
+      otherwise this section is the same as the index page. -->
    <header class="bg-brown">
       <h1 class="container display-1">Forms</h1>
       <div class="container">
@@ -33,77 +35,91 @@
       </div>
    </header>
 
-   <div class="container">
-     <div class="row mt-3">
-         <div class="col">
-            <p class="fs-5">
-               Do you want recommendations on what to read next? Sign up here to get emails on your favorite genres!
-            </p>
+   <h1 class="container text-center mt-3 display-2">VOTE FOR THE BOOK OF THE MONTH HERE!!!</h1>
+   <div class="row">
+      <div class="col mx-5 mb-4">
+         <div class="form-group">
+            <label class="fs-5" for="vote">Write title, author, and comments for why it should be the book of the month! Every first Sunday, the winner will be announced!</label>
+            <textarea class="form-control" id="vote" rows="3"></textarea>
          </div>
-     </div>
+         <div>
+            <input class="p-2 m-1 fs-5" type="submit" value="Submit"/>
+         </div>
+            <!-- another section above that lets users to write why they
+               wanted a certain book to win the book of the month. I would
+            like to know more about how the submission button works since
+            it didn't look like it worked this time  -->
+      </div>
    </div>
 
+
+
    <div class="container bg-brown mb-3">
-      <form class="fs-5">
-         <div class="form-group">
-         <label for="exampleFormControlInput1">Email address</label>
-         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@email.com">
+         <!-- added background so the first form would stand out -->
+         <div class="row mt-1">
+            <div class="col">
+               <p class="fs-5">
+                  <b>Do you want recommendations on what to read next? Sign up here to get emails on your favorite genres!</b>
+               </p>
+                  <!-- as a rule, developers are supposed to only put
+                  content into a column, which can only go into a row,
+                  which can only go into a container. -->
+         <form class="fs-5">
+         <div class="form-group">  
+            <!-- allows form tag to be attached to the class -->
+         <label for="emailaddress">Email address</label>
+         <input type="email" class="form-control" id="emailaddress" placeholder="name@email.com">
          </div>
+            <!-- this section above works the email address, giving it
+            and ID and placeholder -->
          <div class="form-group">
-         <label for="exampleFormControlSelect2">Select how often you want notifications. Every:</label>
-         <select multiple class="form-control" id="exampleFormControlSelect2">
+         <label for="notification">Select how often you want notifications. Every:</label>
+         <select multiple class="form-control" id="notification">
             <option>1 week</option>
             <option>2 weeks</option>
             <option>3 weeks</option>
             <option>4 weeks</option>
          </select>
          </div>
+            <!-- this section above works for the selection option of how 
+            often to be notified-->
          Check all genres you want notifications for:
          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
+            <input class="form-check-input" type="checkbox" value="" id="horror">
+            <label class="form-check-label" for="horror">
             Horror
             </label>
          </div>
          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
+            <input class="form-check-input" type="checkbox" value="" id="romance">
+            <label class="form-check-label" for="romance">
             Romance
             </label>
          </div>
          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
+            <input class="form-check-input" type="checkbox" value="" id="nonfiction">
+            <label class="form-check-label" for="nonfiction">
             Nonfiction
             </label>
          </div>
          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
+            <input class="form-check-input" type="checkbox" value="" id="history">
+            <label class="form-check-label" for="history">
             History
             </label>
          </div>
+            <!-- this section above is to check what genres the user wants
+            to be notified for.  -->
          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Write questions, comments, or feedback here:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="feedback">Write questions, comments, or feedback here:</label>
+            <textarea class="form-control" id="feedback" rows="3"></textarea>
          </div> 
          <div class="p-2">
             <input type="submit" value="Submit"/>
          </div>
+            <!-- last parts include a section to write comments and a submit
+            button so the user knows that the information was given. -->
       </form>
-   </div>
-
-<h1 class="container text-center display-2">VOTE FOR THE BOOK OF THE MONTH BELOW!!!</h1>
-   <div class="row">
-      <div class="col mx-5 mb-4">
-         <div class="form-group">
-            <label class="fs-5" for="exampleFormControlTextarea1">Write title, author, and comments for why it should be the book of the month! Every first Sunday, the winner will be announced!</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-         </div>
-         <div>
-            <input class="p-2 m-1" type="submit" value="Submit"/>
-         </div>
-      </div>
    </div>
 
 </body>

@@ -18,12 +18,6 @@
    background-color: #947352;
 }
 
-a {
-   color: white;
-   text-decoration: none;
-   font-size: 20px;
-}
-
 .table-striped>tbody>tr:nth-child(odd)>td, 
 .table-striped>tbody>tr:nth-child(odd)>th {
    background-color: #947352;
