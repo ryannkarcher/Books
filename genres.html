@@ -8,27 +8,32 @@
    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
    <link rel="stylesheet" href="books.css">
 </head>
-<body>
-   <h1>Genres</h1>
+<body class="bg-green">
+   
+   <header class="bg-brown">
+      <h1 class="container display-1">Genres</h1>
+      <div class="container">
+         <nav class="navbar navbar-expand-sm fs-5">
+            <a class="navbar-brand" href="index.html">Home</a>  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarNavDropdown" aria-controle="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span> 
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+               <ul class="navbar-nav">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="genres.html">Genres</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="form.html">Forms</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+   </header>
 
-      <!-- links to other pages EVERY PAGE, following navbar -->
-   <div>
-      <a href="index.html">Home</a>
-      <a href="genres.html">Genres</a> 
-      <a href="form.html">Forms!</a>
-   </div>
-                     <style>
-                        div {
-                        border-style: solid;
-                        border-color: black;
-                        padding: 5px;
-                        margin: 5px;
-                        }
-                     </style>
-
-
-
-   <div class="container">
+   <div class="container-fluid bg-brown text-center">
       <div class="row">
          <div class="col">
             <a href="#horror">Horror</a>
@@ -48,39 +53,46 @@
    <div class="container">
       <div class="row">
          <div class="col">
-            <h2 name="horror">Horror</h2>
+            <h2 class="text-center display-5 my-3" name="horror">Horror</h2>
          </div>
       </div>
       <div class="row">
-         <div class="col-md-5">
+         <div class="col-md-5 m-2" style="border: solid black; border-radius: 10px">
+            <div class="col-md">
+               <img class="image2" style="height: 300px;" src="images/theShining.jpg"/>
+            </div>
             <h3>The Shining by Stephen King</h3>
-            a;sdlkfja;sldkfj a;lsdkfj a;sodifj asl;dfkj alsdfj scary
-            IMAGE LEFT
+            <p class="fs-5">
+               Jack Torrance’s new job at the Overlook Hotel is the perfect chance for a fresh start. As the off-season caretaker at the atmospheric old hotel, he’ll have plenty of time to spend reconnecting with his family and working on his writing. But as the harsh winter weather sets in, the idyllic location feels ever more remote . . . and more sinister. And the only one to notice the strange and terrible forces gathering around the Overlook is Danny Torrance, a uniquely gifted five-year-old.
+            </p>
          </div>
-         <div class="col-md-5">
+         <div class="col-md-5 m-2" style="border: solid black; border-radius: 10px">
+            <div class="col-md">
+               <img class="image2" style="height: 300px;" src="images/headFullofGhosts.jpg"/>
+            </div>
             <h3>A Head Full of Ghosts by Paul Tremblay</h3>
-            a;sdlkfja;sldkfj a;lsdkfj a;sodifj asl;dfkj alsdfj scary
-            IMAGE LEFT
+            <p class="fs-5">
+               In this dark, psychological thriller, farmer Dexter McCray becomes both a detective and a suspect. He is a man fighting to escape a troubled past, but after waking from an alcoholic blackout to discover his tractor stuck in a ditch and the body of a teenage girl in the cottonwood grove bordering his cornfield, he wonders if it's a fight he cannot win. 
+               </p>
+
          </div>
-         <div class="col-md-5">
-            <h3>spooky scary by random author</h3>
-            a;sdlkfja;sldkfj a;lsdkfj a;sodifj asl;dfkj alsdfj scary
-            IMAGE LEFT
+         <div class="col-md-5 m-2" style="border: solid black; border-radius: 10px">
+            <div class="col-md">
+               <img class="image2" style="height: 300px;" src="images/treesCreptIn.jpeg"/>
+            </div>
+            <h3>And the Trees Crept in by Dawn Kurtagich</h3>
+           <p class="fs-5">
+            When Silla and Nori arrive at their aunt's home, it's immediately clear that the "blood manor" is cursed. The creaking of the house and the stillness of the woods surrounding them would be enough of a sign, but there are secrets too--the questions that Silla can't ignore: Who is the beautiful boy that's appeared from the woods? Who is the man that her little sister sees, but no one else? And why does it seem that, ever since they arrived, the trees have been creeping closer?
+           </p>
          </div>
-         <div class="col-md-5">
-            <h3>alsfj;asldf author</h3>
-            a;sdlkfja;sldkfj a;lsdkfj a;sodifj asl;dfkj alsdfj scary
-            IMAGE LEFT
-         </div>
-         <div class="col-md-5">
-            <h3>hello you by author random</h3>
-            a;sdlkfja;sldkfj a;lsdkfj a;sodifj asl;dfkj alsdfj scary
-            IMAGE LEFT
-         </div>
-         <div class="col-md-5">
-            <h3>so much fun by i hate this</h3>
-            a;sdlkfja;sldkfj a;lsdkfj a;sodifj asl;dfkj alsdfj scary
-            IMAGE LEFT
+         <div class="col-md-5 m-2" style="border: solid black; border-radius: 10px">
+            <div class="col-md">
+               <img class="image2" style="height: 300px;" src="images/chasingTheDead.jpeg"/>
+            </div>
+            <h3>Chasing the Dead by Joe Schreiber</h3>
+            <p class="fs-5">
+               "You have a very lovely little girl," breathed the voice on the phone. And just like that, Susan Young is drawn into a living nightmare. A stranger has kidnapped Sue's daughter, Veda. But he doesn't want her money, only her suffering-and he will kill Veda if Sue doesn't follow his every command. With detailed instructions, the faceless abductor leads Sue into a blinding snowstorm on the longest night of the year, to a place she has not traveled to since childhood.
+            </p>
          </div>
       </div>
    </div>
@@ -88,39 +100,27 @@
    <div class="container">
       <div class="row">
          <div class="col">
-            <h2 name="romance">Romance</h2>
+            <h2 class="text-center display-5 my-3" name="romance">Romance</h2>
          </div>
       </div>
       <div class="row">
-         <div class="col-md-5">
+         <div class="col-md-5 m-2" style="border: solid black; border-radius: 10px">
+            <div class="col-md">
+               <img class="image2" style="height: 300px;" src="images/withUs.jpg"/>
+            </div>
             <h3>It Ends With Us by Colleen Hoover</h3>
-            a;sdlkfja;sldkfj a;lsdkfj a;sodifj so cute
-            IMAGE LEFT
+           <p class="fs-5">
+               Lily hasn't always had it easy, but that's never stopped her from working hard for the life she wants. She's come a long way from the small town where she grew up--she graduated from college, moved to Boston, and started her own business. And when she feels a spark with a gorgeous neurosurgeon named Ryle Kincaid, everything in Lily's life seems too good to be true.
+           </p>
          </div>
-         <div class="col-md-5">
-            <h3>other romance book by author</h3>
-            a;sdlkfja;sldkfj a;lsdkfj a;sodifj so cute
-            IMAGE LEFT
-         </div>
-      </div>
-   </div>
-
-   <div class="container">
-      <div class="row">
-         <div class="col">
-            <h2 name="nonfiction">Nonfiction</h2>
-         </div>
-      </div>
-      <div class="row">
-         <div class="col-md-5">
-            <h3>Very Real Story by Very Real Author</h3>
-            a;sdlkfja;sldkfj a;lsdkfj a;sodifj wow crazy
-            IMAGE LEFT
-         </div>
-         <div class="col-md-5">
-            <h3>sooo coool by hello</h3>
-            a;sdlkfja;sldkfj a;lsdkfj a;sodifj wow crazy
-            IMAGE LEFT
+         <div class="col-md-5 m-2" style="border: solid black; border-radius: 10px">
+            <div class="col-md">
+               <img class="image2" style="height: 300px;" src="images/spanishLove.png"/>
+            </div>
+            <h3>The Spanish Love Deception by Elena Armas</h3>
+           <p class="fs-5">
+               Catalina Martín desperately needs a date to her sister’s wedding. Especially since her little white lie about her American boyfriend has spiralled out of control. Now everyone she knows—including her ex and his fiancée—will be there and eager to meet him.
+           </p>
          </div>
       </div>
    </div>
@@ -128,27 +128,58 @@
    <div class="container">
       <div class="row">
          <div class="col">
-            <h2 name="history">History</h2>
+            <h2 class="text-center display-5 my-3" name="nonfiction">Nonfiction</h2>
          </div>
       </div>
       <div class="row">
-         <div class="col-md-5">
-            <h3>US History by US dude</h3>
-            a;sdlkfja;sldkfj a;lsdkfj super duper factual
-            IMAGE LEFT
+         <div class="col-md-5 m-2" style="border: solid black; border-radius: 10px">
+            <div class="col-md">
+               <img class="image2" style="height: 300px;" src="images/midwife.jpg"/>
+            </div>
+            <h3>The Midwife of Auschwitz by Anna Stuart</h3>
+            <p class="fs-5">
+               Inspired by an incredible true story, this poignant novel tells of one woman’s fight for love, life and hope during a time of unimaginable darkness.
+            </p>
          </div>
-         <div class="col-md-5">
-            <h3>world history by world dude</h3>
-            a;sdlkfja;sldkfj a;lsdkfj who knows how factual it is
-            IMAGE LEFT
+         <div class="col-md-5 m-2" style="border: solid black; border-radius: 10px">
+            <div class="col-md">
+               <img class="image2" style="height: 300px;" src="images/ifYouTell.jpg"/>
+            </div>
+            <h3>If You Tell by Gregg Olsen</h3>
+            <p class="fs-5">
+               After more than a decade, when sisters Nikki, Sami, and Tori Knotek hear the word mom, it claws like an eagle’s talons, triggering memories that have been their secret since childhood. Until now.
+            </p>
          </div>
       </div>
    </div>
-   <!-- TABLE OF  CONTENTS RIGHT OR LEFT  -->
-<!-- contact us EVERY PAGE -->
 
-
-
+   <div class="container">
+      <div class="row">
+         <div class="col">
+            <h2 class="text-center display-5 my-3" name="history">History</h2>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-5 m-2" style="border: solid black; border-radius: 10px">
+            <div class="col-md">
+               <img class="image2" style="height: 300px;" src="images/romeHistory.jpg"/>
+            </div>
+            <h3>SPQR: A History of Ancient Rome by Mary Beard/h3>
+            <p class="fs-5">
+               In SPQR, an instant classic, Mary Beard narrates the history of Rome "with passion and without technical jargon" and demonstrates how "a slightly shabby Iron Age village" rose to become the "undisputed hegemon of the Mediterranean" (Wall Street Journal).
+            </p>
+         </div>
+         <div class="col-md-5 m-2" style="border: solid black; border-radius: 10px">
+            <div class="col-md">
+               <img class="image2" style="height: 300px;" src="images/1984.jpg"/>
+            </div>
+            <h3>1984 by George Orwell</h3>
+            <p class="fs-5">
+               The novel examines the role of truth and facts within politics and the ways in which they are manipulated.
+            </p>
+         </div>
+      </div>
+   </div>
 
 </body>
    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

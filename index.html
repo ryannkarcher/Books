@@ -3,7 +3,7 @@
    2. bootstrap navbar ALL PAGES
    3. bootstrap table PAGE 1
    4. bootstrap form PAGE 3
-   5. bootstrap grid PAGE 2
+   5. bootstrap grid PAGE 1 is best but also page 2
    6. elements should stack vertically when window is small ALL PAGES
    7. have .gitignore file to ignore "/node_modules" YES -->
 
@@ -20,55 +20,66 @@
    <link rel="stylesheet" href="books.css">
 </head>
 
-<body>
-   <header class="brown">
-      <h1 class="container">Books to Book</h1>
-         <!-- links to other pages EVERY PAGE, following navbar -->
+<body class="bg-green">
+   <header class="bg-brown">
+      <h1 class="container display-1">Books to Book</h1>
       <div class="container">
-         <nav class="navbar navbar-light bg-light">
-            <a class=navbar-brand" href="index.html">Home</a>
-            <a class=navbar-brand" href="genres.html">Genres</a> 
-            <a class=navbar-brand" href="form.html">Forms!</a>
+         <nav class="navbar navbar-expand-sm fs-5">
+            <a class="navbar-brand" href="index.html">Home</a>  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarNavDropdown" aria-controle="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span> 
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+               <ul class="navbar-nav">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="genres.html">Genres</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="form.html">Forms</a>
+                  </li>
+               </ul>
+            </div>
          </nav>
       </div>
    </header>
 
    <div class="container">
       <div class="row">
-         <div class="col">
-            Vote for the book of the month, sign up for recommendations, and contact us for questions and feedback on our Form page!
-            <a href="form.html">Forms!</a>
+         <div class="col fs-5 text-center my-3">
+            Vote for the book of the month, sign up for recommendations, and contact us for questions and feedback on our Forms page!
          </div>
       <div class="row">
          <div class="col">
-            <h2 class="text-center">Book of the Month!</h2>
+            <h2 class="text-center display-3">Book of the Month!</h2>
          </div>
       </div>
       </div>
       <div class="row">
          <div class="col-md-3">
-            <img class="image1" src="images/thegrove.jpg" alt="The Grove by John Rector"/>
+            <img class="image1 my-3" src="images/thegrove.jpg" alt="The Grove by John Rector"/>
          </div>
-         <div class="col-md-6">
-            <h3>The Grove by John Rector</h3>
-            In this dark, psychological thriller, farmer Dexter McCray becomes both a detective and a suspect. He is a man fighting to escape a troubled past, but after waking from an alcoholic blackout to discover his tractor stuck in a ditch and the body of a teenage girl in the cottonwood grove bordering his cornfield, he wonders if it's a fight he cannot win. In the hopes of proving his innocence, he sets out to find the truth. Now, isolated from friends and family and devoid of an alibi, he turns to the only person left who can help pick up the pieces of his shattered life...the dead girl herself. Rector understands the complexities of a haunting tale and a compelling who-done-it, and he takes listeners on a ride that is both memorable and unsettling.
+         <div class="col-md-6 mb-3">
+            <h3 class="text-center text-white display-4">The Grove by John Rector</h3>
+            <p class="fs-5">
+               In this dark, psychological thriller, farmer Dexter McCray becomes both a detective and a suspect. He is a man fighting to escape a troubled past, but after waking from an alcoholic blackout to discover his tractor stuck in a ditch and the body of a teenage girl in the cottonwood grove bordering his cornfield, he wonders if it's a fight he cannot win. In the hopes of proving his innocence, he sets out to find the truth. Now, isolated from friends and family and devoid of an alibi, he turns to the only person left who can help pick up the pieces of his shattered life...the dead girl herself. Rector understands the complexities of a haunting tale and a compelling who-done-it, and he takes listeners on a ride that is both memorable and unsettling.
+            </p>
          </div>
-         <aside class="card" style="display: block; margin-left: auto; margin-right: auto; width:18rem;">
+         <aside class="card mb-4 bg-brown text-white" style="display: block; margin-left: auto; margin-right: auto; width:18rem;">
             <div class="card-body">
-               <h3 class="card-title">Vote for book of the month!!</h3>
+               <h3 class="card-title text-center">Vote for book of the month!!</h3>
                <p class="card-text">Want to see your favorite book featured?</p>
-            <a href="form.html" class="btn btn-primary">Vote here!</a>
+            <a href="form.html" class="btn btn-dark">Vote here!</a>
             </div>
          </aside>
       </div>
 
       <div class="container">
          <div class="row">
-            <div class="col">
+            <div class="col-md-12">
                <h2 class="text-center">Top 10 Favorites</h2>
-               <table class="table">
-                  <thead class="thead-dark">
-                     <tr>
+               <table class="table table-striped">
+                  <thead>
                         <th scope="col">Rank</th>
                         <th scope="col">Cover</th>
                         <th scope="col">Title</th>
@@ -155,17 +166,6 @@
          </div>
       </div>
    </div>
-
-
-   <!-- scrolling bar of books -->
-   <!-- contact us footnote EVERY PAGE -->
-  
-
-
-
-
-
-
 
 </body>
    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

@@ -5,10 +5,30 @@
    margin-right: auto;
 }
 
-html {
+.image2 {
+   margin-bottom: 8px;
+   margin-top: 10px;
+}
+
+.bg-green {
    background-color: #B2AC88;
 }
 
-#brown {
+.bg-brown {
    background-color: #947352;
 }
+
+a {
+   color: white;
+   text-decoration: none;
+   font-size: 20px;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #947352;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td,
+.table-striped>tbody>tr:nth-child(even)>th {
+   background-color: #B99976;
